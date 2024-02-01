@@ -1,0 +1,20 @@
+@import "../index.scss";
+
+.section__hero {
+  min-height: 65vh;
+  font-family: "Jost", sans-serif;
+  padding: $padding-main;
+  width: 100%;
+  display: flex;
+  background-color: $color-primary;
+
+  .hero {
+    width: 100%;
+    &__text {
+      width: 50%;
+    }
+    &__image {
+      width: 50%;
+    }
+  }
+}

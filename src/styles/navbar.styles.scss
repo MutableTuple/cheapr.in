@@ -1,0 +1,67 @@
+@import "../index.scss";
+.nav {
+  font-family: $font--poppins;
+}
+.navbar {
+  max-width: $max-width;
+  height: $navbar--height;
+  box-shadow: $box-shadow--1;
+  display: flex;
+  align-items: center;
+  padding: 0rem 1.25rem;
+  justify-content: space-between;
+  color: #343434;
+  box-shadow: $box-shadow--bottom--2;
+
+  &__logo {
+    .strong_logo {
+      color: $color-primary--2;
+    }
+  }
+  &__search {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    input[type="search"] {
+      width: 100%;
+      font-size: $font-size-normal;
+      border: none;
+      outline: none;
+      border: 1px solid #858585;
+      border-radius: 0.25rem;
+      padding: $padding-1;
+      font-family: $font--poppins;
+      position: relative;
+    }
+    svg {
+    }
+  }
+  &__profile {
+    .profile--icon {
+      width: 2rem;
+      height: 2rem;
+      border-radius: 50%;
+      border: 1px solid #000;
+    }
+  }
+}
+.navbar__sub {
+  width: 100%;
+  background-color: $color-primary;
+  font-size: $font-size-medium;
+  color: white;
+  ul {
+    display: flex;
+    gap: 1.25rem;
+    list-style: none;
+    padding: $padding-top;
+    li {
+      padding: $padding-2;
+      transition: 0.25s all;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}

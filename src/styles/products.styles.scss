@@ -1,0 +1,14 @@
+@import "../index.scss";
+
+.products {
+  h1 {
+    font-weight: 500;
+  }
+  font-family: $font--jost;
+  padding: $padding-main;
+  &__section {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1.5rem;
+  }
+}
